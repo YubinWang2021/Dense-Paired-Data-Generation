@@ -13,7 +13,6 @@ This pipeline is based on FrankMocap: https://github.com/facebookresearch/frankm
 </p>
 
 
-The dense 2D–3D paired data is generated from the input_path (your original image list), and the rendered images are saved in out_dir.
 
 ## Installation
 - Follow the installation in FrankMocap [INSTALL.md](docs/INSTALL.md)
@@ -26,8 +25,10 @@ The dense 2D–3D paired data is generated from the input_path (your original im
   
   # screenless mode (e.g., a remote server)
   xvfb-run -a python -m demo.demo_bodymocap ./your_list_of_extracted_video_frames(an image folder) --out_dir ./mocap_output
+  ```
 
 - Note: 
+  - The dense 2D–3D paired data is generated from the input_path (your original image list), and the rendered images are saved in out_dir.
   - Above commands use openGL by default. If it does not work, you may try alternative renderers (pytorch3d or openDR). 
   - See the readme of each module for details
   
