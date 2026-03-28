@@ -18,7 +18,7 @@ This pipeline is based on FrankMocap: https://github.com/facebookresearch/frankm
 - Follow the installation in FrankMocap [INSTALL.md](docs/INSTALL.md)
 
 ## A Quick Start
-- Run body motion capture and generate Dense 2D-3D Paried Data
+- Run body motion capture and generate Dense 2D-3D Paired Data
   ```
   # using a machine with a monitor to show output on screen
   python -m demo.demo_bodymocap --input_path ./your_extracted_video_frames(an image folder) --out_dir ./mocap_output
