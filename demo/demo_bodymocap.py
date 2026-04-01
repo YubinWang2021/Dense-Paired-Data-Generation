@@ -25,7 +25,7 @@ import tqdm
 def run_body_mocap(args, body_bbox_detector, body_mocap, visualizer):
     #Setup input data to handle different types of inputs
     input_type, input_data = demo_utils.setup_input(args)
-    #cur_frame = 333068
+    cur_frame = 0 #333068
     pbar = tqdm.tqdm(total=len(input_data), initial=cur_frame, desc="Processing images", unit="img")
 
     video_frame = 0
@@ -98,15 +98,8 @@ def run_body_mocap(args, body_bbox_detector, body_mocap, visualizer):
 
         cur_frame +=1
         if img_original_bgr is None or cur_frame > args.end_frame:
-            print(img_original_bgr)
-            print(cur_frame)
-            print(args.end_frame)
-            print('we are here!')
-            if cur_frame > args.end_frame:
-                break
-            else:
-                continue   
-        #print("--------------------------------------")
+            break
+        print("--------------------------------------")
 
         if load_bbox:
             body_pose_list = None
