@@ -25,12 +25,10 @@ This pipeline is based on FrankMocap: https://github.com/facebookresearch/frankm
   # For example: 
   python -m demo.demo_bodymocap --input_path ./exam --out_dir ./mocap_output
 
-  # **[Recommend]** screenless mode (e.g., a remote server)
+  # [Recommend] screenless mode (e.g., a remote server)
   xvfb-run -a python -m demo.demo_bodymocap --input_path ./your_list_of_extracted_video_frames(an image folder) --out_dir ./mocap_output
   # For example:
   xvfb-run -a python -m demo.demo_bodymocap --input_path ./exam --out_dir ./mocap_output
-
-  mocap_output
   ```
 
 - Note: 
