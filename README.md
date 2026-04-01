@@ -61,7 +61,7 @@ This file stores visible SMPL vertices projected onto the input image. For an in
 
 ---
 
-**(1) `*_samples.pkl` - Visible Face Sampling Data**
+**(2) `*_samples.pkl` - Visible Face Sampling Data**
 This file stores sampling points generated on visible triangular faces of the SMPL mesh, along with their corresponding barycentric coordinates. For an input image `CCVID/session1/003_04/00001.jpg`, the corresponding file is `CCVID_session1_003_04_00001_samples.pkl`.
 
 **Data Structure**
