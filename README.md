@@ -22,9 +22,15 @@ This pipeline is based on FrankMocap: https://github.com/facebookresearch/frankm
   ```
   # using a machine with a monitor to show output on screen
   python -m demo.demo_bodymocap --input_path ./your_extracted_video_frames(an image folder) --out_dir ./mocap_output
-  
-  # screenless mode (e.g., a remote server)
-  xvfb-run -a python -m demo.demo_bodymocap ./your_list_of_extracted_video_frames(an image folder) --out_dir ./mocap_output
+  # For example: 
+  python -m demo.demo_bodymocap --input_path ./exam --out_dir ./mocap_output
+
+  # **[Recommend]** screenless mode (e.g., a remote server)
+  xvfb-run -a python -m demo.demo_bodymocap --input_path ./your_list_of_extracted_video_frames(an image folder) --out_dir ./mocap_output
+  # For example:
+  xvfb-run -a python -m demo.demo_bodymocap --input_path ./exam --out_dir ./mocap_output
+
+  mocap_output
   ```
 
 - Note: 
