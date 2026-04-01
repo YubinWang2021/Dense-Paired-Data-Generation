@@ -32,7 +32,7 @@ This pipeline is based on FrankMocap: https://github.com/facebookresearch/frankm
   ```
 
 - Note: 
-  - The dense 2D–3D paired data is generated from the input_path (your original image list), and the rendered images are saved in out_dir.
+  - The dense 2D–3D paired data is **generated in the input_path** (your original image list), and the rendered images are **saved in out_dir**.
   - Above commands use openGL by default. If it does not work, you may try alternative renderers (pytorch3d or openDR). 
   - See the readme of each module for details
   
